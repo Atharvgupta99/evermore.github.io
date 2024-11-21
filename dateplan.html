@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Based Date Planner</title>
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="dateplan.css">
+    <script src="dateplan.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Date Planner ❤️</h1>
+        <p>Your perfect date, all in one place!</p>
+    </header>
+
+    <main>
+        <!-- Date Suggestion Button -->
+        <section id="date-suggestions">
+            <button onclick="showDateTemplate()">Suggest Me a Date!</button>
+            <div id="suggestions-container"></div>
+            <button id="shuffle-btn" onclick="shuffleSuggestions()">Shuffle Suggestions</button>
+        </section>
+
+        <!-- Pop-up Template -->
+        <section id="popup-template">
+            <div id="popup-content">
+                <h2>Choose Your Date Preferences</h2>
+                <label for="date-type">What kind of date are you looking for?</label>
+                <select id="date-type">
+                    <option value="romantic">Romantic</option>
+                    <option value="adventure">Adventurous</option>
+                    <option value="fun">Fun & Playful</option>
+                    <option value="relaxing">Relaxing</option>
+                    <option value="special">Special Event</option>
+                </select>
+
+                <label for="budget">What’s your budget?</label>
+                <input type="number" id="budget" placeholder="Enter budget in USD">
+
+                <label for="seasonal">Include Seasonal/Event Based Suggestions?</label>
+                <input type="checkbox" id="seasonal-events">
+
+                <button onclick="generateDate()">Generate Date</button>
+                <button onclick="closePopup()">Cancel</button>
+            </div>
+        </section>
+
+        <!-- Date Details Display -->
+        <section id="date-details">
+            <h2>Your Date Details</h2>
+            <div id="date-details-content"></div>
+        </section>
+
+        <!-- Date Reminder & Countdown -->
+        <section id="date-reminder">
+            <h2>Date Reminder & Countdown</h2>
+            <label for="reminder-date">Enter your next special date (e.g., anniversary):</label>
+            <input type="date" id="reminder-date">
+            <button onclick="setCountdown()">Set Reminder</button>
+            <p id="countdown-timer"></p>
+        </section>
+        <img src="question4.jpg" alt="Creative activity" class="question-image">
+        <img src="question3.jpg" alt="Vacation date" class="question-image">
+        <img src="question2.jpg" alt="Romantic dinner" class="question-image">
+        <img src="question1.jpg" alt="Relaxing date" class="question-image">
+    </main>
+
+    <footer>
+        <p><a href="Home.html">Back to Home</a></p>
+    </footer>
+</body>
+</html>

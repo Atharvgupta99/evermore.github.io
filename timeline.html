@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relationship Timeline</title>
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="timeline.css">
+    <script src="timeline.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Relationship Timeline ❤️</h1>
+        <p>Track your beautiful journey together, and plan an even brighter future!</p>
+    </header>
+
+    <main>
+        <!-- First Time Memories -->
+        <section id="first-times">
+            <h2>First Time Memories</h2>
+            <div class="category">
+                <h3>Happened</h3>
+                <ul id="happened-list">
+                    <li>First Date: 12th March 2023</li>
+                    <li>First Movie Together: 25th March 2023</li>
+                </ul>
+                <h3>Still to Happen</h3>
+                <ul id="still-to-happen-list">
+                    <li>First Road Trip</li>
+                </ul>
+                <button onclick="addFirstTime()">Add a First Time Event</button>
+            </div>
+        </section>
+
+        <!-- Milestones -->
+        <section id="milestones">
+            <h2>Milestones & Anniversaries</h2>
+            <div class="category">
+                <ul id="milestones-list">
+                    <li>First Anniversary: 12th March 2024</li>
+                    <li>Trip to Paris: Planned for June 2024</li>
+                </ul>
+                <button onclick="addMilestone()">Add a Milestone</button>
+            </div>
+        </section>
+
+        <!-- Date Logs -->
+        <section id="date-logs">
+            <h2>Date Logs</h2>
+            <textarea id="date-log-input" placeholder="Write about your recent date..."></textarea>
+            <button onclick="addDateLog()">Save Date Log</button>
+            <ul id="date-logs-list"></ul>
+        </section>
+
+        <!-- Vision Board -->
+        <section id="vision-board">
+            <h2>Vision Board & Future Plans</h2>
+            <textarea id="vision-input" placeholder="Write your future dreams together..."></textarea>
+            <button onclick="addVision()">Add to Vision Board</button>
+            <ul id="vision-list"></ul>
+        </section>
+
+        <!-- Relationship Score -->
+        <section id="relationship-score">
+            <h2>Relationship Score</h2>
+            <p>Calculate how far you've come based on your memories, milestones, and date logs!</p>
+            <button onclick="calculateScore()">Calculate Score</button>
+            <p id="score-display"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="Home.html">Back to Home</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couples Quiz</title>
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="quiz.css">
+    <script src="quiz.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Couples Quiz ❤️</h1>
+        <p>Discover your ideal date style and compare with your partner!</p>
+    </header>
+
+    <main>
+        <section id="quiz-section">
+            <h2>Take the Quiz</h2>
+            <form id="quiz-form">
+                <div class="question">
+                    
+                    <label>1. Your perfect weekend includes:</label>
+                    <select id="q1">
+                        <option value="relaxing">Relaxing at home with movies and snacks</option>
+                        <option value="adventurous">An adventurous outdoor activity</option>
+                        <option value="social">Socializing with friends at a party</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    
+                    <label>2. What's your idea of a romantic dinner?</label>
+                    <select id="q2">
+                        <option value="candlelight">A cozy candlelight dinner</option>
+                        <option value="streetfood">Exploring street food stalls together</option>
+                        <option value="diy">Cooking together at home</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                   
+                    <label>3. Pick a dream date location:</label>
+                    <select id="q3">
+                        <option value="beach">A secluded beach</option>
+                        <option value="mountains">A serene mountain cabin</option>
+                        <option value="city">A vibrant city full of life</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    
+                    <label>4. What’s a fun way to bond?</label>
+                    <select id="q4">
+                        <option value="painting">A creative activity like painting</option>
+                        <option value="gaming">Competing in a fun game or sport</option>
+                        <option value="dancing">Dancing together to your favorite tunes</option>
+                    </select>
+                </div>
+
+                <button type="button" onclick="calculateResult()">Submit</button>
+            </form>
+
+            <div id="result"></div>
+        </section>
+
+        <section id="compare-section">
+            <h2>Compare with Your Partner</h2>
+            <p>Share your results and find your compatibility!</p>
+            <textarea id="partner-results" placeholder="Paste your partner's result here..."></textarea>
+            <button type="button" onclick="compareResults()">Compare</button>
+            <div id="comparison-result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="Home.html">Back to Home</a></p>
+    </footer>
+</body>
+</html>

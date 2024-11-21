@@ -1,0 +1,174 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Simpler font for readability */
+    background-color: #fff6f6; /* Soft pinkish background for warmth */
+    color: #4b4b4b; /* Neutral dark gray for text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #ff4e71; /* Elegant soft red-pink */
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #fddede; /* Light pink on hover */
+}
+
+/* Main Intro Section */
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #ff7a8a 0%, #ffb3b3 100%);
+    border-bottom: 2px solid #ff4e71;
+}
+
+.intro h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    background-color: #fff;
+    color: #4b4b4b;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 2px solid #ff4e71;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* 3 features in a row */
+}
+
+/* Block Layout for Features */
+.feature {
+    background-color: #ffe4e6; /* Light blush background for each feature */
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 30%; /* Each feature takes 30% of the row width */
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8em;
+    color: #ff4e71;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Heart Icon Styling */
+.heart {
+    font-size: 1.6em;
+    color: #ff4e71;
+    margin-right: 10px;
+}
+
+/* Countdown Section */
+.countdown {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ff4e71;
+    color: white;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.countdown h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.countdown p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #ff4e71;
+    padding: 20px 0;
+    color: white;
+    font-size: 1.1em;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+/* Smooth Scroll and Transitions for Navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Feature Icons Styling */
+.feature span {
+    font-size: 1.6em;
+    color: #ff4e71;
+    margin-right: 15px;
+}
+
+/* Adjustments for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .feature {
+        width: 100%; /* Stacks the features vertically on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .intro h1 {
+        font-size: 2.5em;
+    }
+
+    .countdown h2 {
+        font-size: 2em;
+    }
+}
